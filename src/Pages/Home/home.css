@@ -1,0 +1,134 @@
+.home {
+  padding-top: 10vh;
+}
+
+.home__about-corona {
+  text-align: center;
+  padding: 0 var(--second-padding);
+  padding-top: 100px;
+}
+
+.home__about-corona h3 {
+  color: var(--second-color);
+  font-size: 1.5rem;
+}
+
+.home__about-corona p {
+  width: 70%;
+  margin: 40px auto;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #636e72;
+}
+
+.home__about-corona__img-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home__about-corona__img-container img {
+  width: 32%;
+}
+
+.home__safe {
+  color: var(--second-color);
+  font-weight: bold;
+  font-size: 2rem;
+  padding: var(--second-padding);
+  text-align: center;
+}
+
+.home__emergency {
+  padding: 12vh var(--second-padding);
+  background-color: var(--border-color);
+  text-align: center;
+}
+
+.home__emergency h3 {
+  color: var(--second-color);
+  font-size: 1.5rem;
+}
+
+.home__emergency form {
+  width: 50%;
+  height: 18vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 40px auto;
+}
+
+.home__emergency form select,
+.home__emergency form input {
+  padding: 10px;
+  background-color: var(--input-color);
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.home__emergency-numbers {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+footer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--input-color);
+  font-weight: bold;
+  background-color: var(--main-color);
+}
+
+.up {
+  width: 60px;
+  height: 60px;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+@media (max-width: 768px) {
+  .home__about-corona h3 {
+    color: var(--second-color);
+    font-size: 1.5rem;
+  }
+
+  .home__about-corona p {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .home__about-corona__img-container {
+    flex-direction: column;
+  }
+
+  .home__about-corona__img-container img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .home__about-corona__img-container img:last-child {
+    margin-bottom: 0;
+  }
+
+  .home__emergency form {
+    width: 100%;
+  }
+
+  .home__emergency-numbers {
+    width: 100%;
+  }
+}

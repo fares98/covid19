@@ -1,0 +1,72 @@
+.multi-choices {
+  margin-bottom: 40px;
+}
+
+.multi-choices p {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.multi-choices__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.multi-choices__form label {
+  position: relative;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--input-color);
+  border: 1px solid var(--border-color);
+  transition: 0.3s all ease-in-out;
+  color: #636e72;
+  font-weight: bold;
+}
+
+.multi-choices__form label:last-child {
+  margin-bottom: 0;
+}
+
+.multi-choices__form label input {
+  appearance: none;
+}
+
+.multi-choices__form label span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.multi-choices__form label span::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: 30px;
+  width: 8px;
+  height: 8px;
+  background-color: #eee;
+  border: 8px solid var(--second-color);
+  border-radius: 50%;
+}
+
+.multi-choices__form label input:checked ~ span::after {
+  position: static;
+}
+
+.multi-choices__form label input:checked ~ span {
+  border: none;
+}
+
+.multi-choices .multi-choices--active {
+  background-color: #fff;
+  box-shadow: 5px 5px 5px #ccc;
+  color: var(--main-color);
+}

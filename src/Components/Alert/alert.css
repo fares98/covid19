@@ -1,0 +1,29 @@
+.alert {
+  position: fixed;
+  width: 85vw;
+  right: 3vw;
+  top: 15vh;
+  z-index: 99;
+}
+
+.alert .MuiPaper-root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alert .MuiAlert-message {
+  width: 85%;
+}
+
+.alert .MuiAlert-action {
+  margin: inherit;
+}
+
+@media (max-width: 768px) {
+  .alert {
+    width: 95vw;
+    right: 2.5vw;
+    top: 8vh;
+  }
+}

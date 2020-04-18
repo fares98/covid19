@@ -1,0 +1,43 @@
+.twoChoices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.twoChoices__text {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.twoChoices__yes,
+.twoChoices__no {
+  border: 1px solid var(--border-color);
+  background-color: var(--input-color);
+  padding: 20px;
+  width: 45%;
+  transition: 0.3s all ease-in-out;
+  color: #636e72;
+  font-weight: bold;
+}
+
+.twoChoices .active {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  color: var(--input-color);
+}
+
+.twoChoices__no.active {
+  background-color: var(--second-color);
+  border-color: var(--second-color);
+}
+
+@media (max-width: 768px) {
+  .twoChoices__text {
+    width: 100%;
+  }
+}

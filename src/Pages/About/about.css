@@ -1,0 +1,36 @@
+.about__header {
+  background-image: url("../../assets/background.png");
+  background-repeat: no-repeat;
+  background-size: 35%;
+}
+
+.about__article {
+  margin: 40px 0;
+  line-height: 1.8;
+  padding: 0 180px;
+}
+
+.about__article-header {
+  margin-bottom: 20px;
+}
+
+.about__card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 180px;
+}
+
+@media (max-width: 768px) {
+  .about__header {
+    background-size: 100%;
+  }
+
+  .about__card-container {
+    padding: 0 20px;
+  }
+
+  .about__article {
+    padding: 0 20px;
+  }
+}

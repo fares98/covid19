@@ -1,0 +1,23 @@
+.navbar {
+  height: 10vh;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.navbar__cancel,
+.navbar__back {
+  box-shadow: 0px 0px 3px var(--border-color), 0px 0px 3px var(--border-color);
+}
+
+.navbar__back {
+  width: 80px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+}

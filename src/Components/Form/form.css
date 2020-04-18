@@ -1,0 +1,40 @@
+.about-form {
+  width: 55vw;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-form__input {
+  border: 1px solid var(--border-color);
+  background-color: var(--input-color);
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border-radius: 3px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.half-width {
+  width: 48%;
+}
+
+input[type="submit"] {
+  border: 1px solid transparent;
+  margin: auto;
+  padding: 10px 40px;
+  background-color: transparent;
+  box-shadow: 0px 0px 5px var(--border-color), 0px 0px 5px var(--border-color);
+  border-radius: 3px;
+  color: var(--second-color);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .about-form {
+    width: 90vw;
+  }
+}

@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tajawal", sans-serif;
+}
+
+:root {
+  --main-color: #06264d;
+  --second-color: #f52968;
+  --border-color: #d8d8d8;
+  --input-color: #fcfcfc;
+  --main-padding: 350px;
+  --second-padding: 120px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --main-padding: 20px;
+    --second-padding: 20px;
+  }
+}
